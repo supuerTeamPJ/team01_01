@@ -1,11 +1,13 @@
 import React from 'react';
 import GlobalStyles from './styled/reset';
+import {RouterProvider} from 'react-router-dom';
+import router from './routes/routing';
 
 function App() {
   return (
     <>
-    라우팅연결예정
     <GlobalStyles/>
+    <RouterProvider router={router}/>
     </>
   );
 }
