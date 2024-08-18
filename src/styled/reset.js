@@ -1,6 +1,6 @@
 // 기본 html 초기화 입력
 
-import * as React from 'react'
+
 import reset from 'styled-reset'
 import { createGlobalStyle } from 'styled-components'
 
