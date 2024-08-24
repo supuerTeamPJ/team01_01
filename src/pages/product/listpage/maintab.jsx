@@ -6,7 +6,7 @@ import { flex } from "../../../styled/common"
 
 
 
-const Maintab = () =>{
+const Maintab = ({setCategory}) =>{
 
 // 전달받은 셋상태를 변경해 부모가 업데이트하게 한다. 
 
@@ -14,8 +14,16 @@ const Maintab = () =>{
 
   const handleTabChange = (e) => {
     const innerText = e.target.innerText;
-    if(innerText === '프리미엄 펜') return  setTabColor(true)
+
+
+    if(innerText === 'premium'){
+      setTabColor(true)
+      setCategory(innerText);
+
+    } else{
       setTabColor(false)
+      setCategory(innerText);
+    }
   }
 
     //state는 상태 변화가 비동기 , 
@@ -30,12 +38,12 @@ const Maintab = () =>{
           <TabBox 
           textColor = {tabcolor ? '#fff': '#333'}
           color={tabcolor ? '#c40f39' : '#fff'} 
-          onClick={(e)=> handleTabChange(e)}>프리미엄 펜</TabBox>
+          onClick={(e)=> handleTabChange(e)}>premium</TabBox>
 
           <TabBox 
           textColor = {tabcolor ? '#333': '#fff'}
           color={tabcolor ? '#fff' : '#c40f39'}
-          onClick={(e) => handleTabChange(e)}>펜 캔슬</TabBox>
+          onClick={(e) => handleTabChange(e)}>pen</TabBox>
         </Flexbox>
       </Container>
     </>

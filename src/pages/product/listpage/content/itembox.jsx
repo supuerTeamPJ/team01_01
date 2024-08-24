@@ -1,21 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import itemimg from '../../../../image/img_product_view_16_2.jpg'
 
 
-const ItemBox = () => {
-  // 전달받은 값을토대로 구현한다.
+const ItemBox = ({item}) => {
+  const { name, imgURL, subcategory } = item;
+
   return (
     <>
       <Box>
         <ImgBox>
-          <img src={itemimg} alt="" />
+          <img src={imgURL} alt="제품사진" />
           <Overlay></Overlay>
           <Icon>+</Icon>
         </ImgBox>
         <TextBox>
-            <span>유성볼펜</span>
-            153 클립 파스텔
+            <span>{subcategory}</span>
+            {name}
           </TextBox>
       </Box>
     </>
