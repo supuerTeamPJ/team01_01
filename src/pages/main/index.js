@@ -1,9 +1,21 @@
 
 import React from "react"
+import VisualSection from "./visualsection"
+import NewArrivalsSection from "./newarrivalssection"
+import ProductListSection from "./ProductListSection"
+import Bbssection from "./bbssection"
+//import VideoSection from "./videosection "
+
 
 const MainPage = () =>{
   return(
-    <>메인페이지입니다.</>
+    <>
+    <VisualSection/>
+    <NewArrivalsSection/>
+    <ProductListSection/>
+    {/* <VideoSection/> */}
+    <Bbssection/>
+    </>
   )
 }
 
