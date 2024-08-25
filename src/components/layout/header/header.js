@@ -61,7 +61,7 @@ const Header = () => {
                   </li>
                   <li>
                     <a href="https://www.monami.com/index.php;">
-                      <img src="/image/btn_header_sns_03.gif" alt="모나미 유튜브 바로가기" />
+                      <img src="/image/btn_header_sns_03.png" alt="모나미 유튜브 바로가기" />
                     </a>
                   </li>
                 </ul>

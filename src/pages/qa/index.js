@@ -18,5 +18,5 @@ const Customer = () => {
 export default Customer;
 
 const Wrapper = styled.div`
-  padding-top: 150px;
+
 `;

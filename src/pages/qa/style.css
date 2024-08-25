@@ -206,7 +206,7 @@ textarea {
   box-sizing: border-box;
 }
 
-button {
+/* button {
   width: 100%;
   padding: 10px;
   background-color: #007bff;
@@ -219,7 +219,7 @@ button {
 
 button:hover {
   background-color: #0056b3;
-}
+} */
 
 /* inquiry 문의하기 */
 .inquiry {
