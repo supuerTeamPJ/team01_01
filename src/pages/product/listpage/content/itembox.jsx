@@ -1,13 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import useMoveDetail from "../../../../hooks/usemoveDetail";
 
 
 const ItemBox = ({item}) => {
-  const { name, imgURL, subcategory } = item;
+  const { name, imgURL, subcategory,id } = item;
+
+  const MoveDetail = useMoveDetail();
+
+  const handleMoveDetail = () => {
+    MoveDetail(id)
+  }
 
   return (
     <>
-      <Box>
+      <Box onClick={() => {handleMoveDetail()}}>
         <ImgBox>
           <img src={imgURL} alt="제품사진" />
           <Overlay></Overlay>
@@ -16,7 +23,7 @@ const ItemBox = ({item}) => {
         <TextBox>
             <span>{subcategory}</span>
             {name}
-          </TextBox>
+        </TextBox>
       </Box>
     </>
   );
