@@ -1,8 +1,17 @@
 import React from 'react';
+import GlobalStyles from './styled/reset';
+import {RouterProvider} from 'react-router-dom';
+import router from './routes/routing';
+import { ProductProvider } from './context/productcontext';
 
 function App() {
   return (
-    <>라우팅연결예정</>
+    <>
+    <ProductProvider>
+      <GlobalStyles/>
+      <RouterProvider router={router}/>
+    </ProductProvider>
+    </>
   );
 }
 
