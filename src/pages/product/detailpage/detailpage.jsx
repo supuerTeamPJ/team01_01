@@ -49,7 +49,6 @@ export default Detailpage;
 
 
 const Wrapper = styled.div`
-  padding-top: 150px;
   position: relative;
   overflow: hidden;
   width: 100%;
