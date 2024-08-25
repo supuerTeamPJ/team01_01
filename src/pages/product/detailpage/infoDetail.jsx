@@ -3,21 +3,21 @@ import React from "react"
 import styled from "styled-components";
 import { flexCenter } from "../../../styled/common";
 
-const InfoDetail = () =>{
+const InfoDetail = ({productDetail}) =>{
+
+  const {name, content, subcategory} = productDetail || {}
+  
   return(
     <>
       <Wrapper>
         <Title>
-          프러스펜 3000 프레임
-          <span>프리미엄 펜</span>
+          {name}
+          <span>{subcategory}</span>
         </Title>
         <InfoList>
           <Keyfeatures>
           <span>KEY FEATURES</span>
-          프러스펜 3000(수성) 디자인을 재해석해 탄생한 프리미엄 유성 볼펜
-          금속 재질을 적용하여 모던하고 고급스러움을 강조한 디자인
-          헤어라인 후가공 공법을 적용하여 자연스러운 질감 표현
-          0.7mm 필기선, FX 4000 고급 리필심 내장
+          {content}
           </Keyfeatures>
           <Ink>
             <span>ink color</span>

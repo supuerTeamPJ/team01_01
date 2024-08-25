@@ -3,30 +3,35 @@ import React, { useEffect, useState } from "react"
 import Container from "../../../components/container"
 import styled from "styled-components"
 import { flex } from "../../../styled/common"
+import {  useMatch, useNavigate } from "react-router-dom";
 
 
 
 const Maintab = ({setCategory}) =>{
 
-// 전달받은 셋상태를 변경해 부모가 업데이트하게 한다. 
-
+  const isDetailPage = useMatch("/product/:id");
+  
   const [tabcolor, setTabColor ] = useState(true);
+  const navigate = useNavigate();
+
 
   const handleTabChange = (e) => {
-    const innerText = e.target.innerText;
-
-
-    if(innerText === 'premium'){
-      setTabColor(true)
-      setCategory(innerText);
-
-    } else{
-      setTabColor(false)
-      setCategory(innerText);
+    
+    if(!isDetailPage){
+      const innerText = e.target.innerText;
+      if(innerText === 'premium'){
+        setTabColor(true)
+        setCategory(innerText);
+  
+      } else{
+        setTabColor(false)
+        setCategory(innerText);
+      }
+    }else{
+      navigate("/product");
     }
   }
 
-    //state는 상태 변화가 비동기 , 
   useEffect(() => {
     console.log(tabcolor)
   }, [tabcolor])
