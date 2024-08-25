@@ -1,6 +1,6 @@
 
 import React from "react"
-import mainImg from '../../../image/img_best_tab01_07.jpg'
+import mainImg from '/image/img_best_tab01_07.jpg'
 import styled from "styled-components";
 import { flex } from "../../../styled/common";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"

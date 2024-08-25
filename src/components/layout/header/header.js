@@ -14,11 +14,11 @@ import {
   Search,
   AllMenu,
 } from "../../../styled/layout";
-import LogoImage from "../../../image/logo.jpg";
-import BtnFbImage from "../../../image/btn_header_sns_01.gif";
-import BtnIgImage from "../../../image/btn_header_sns_02.gif";
-import BtnYtbImage from "../../../image/btn_header_sns_03.png";
-import BtnSearchImage from "../../../image/btn_search.gif";
+import LogoImage from "/image/logo.jpg";
+import BtnFbImage from "/image/btn_header_sns_01.gif";
+import BtnIgImage from "/image/btn_header_sns_02.gif";
+import BtnYtbImage from "/image/btn_header_sns_03.png";
+import BtnSearchImage from "/image/btn_search.gif";
 
 const Header = () => {
 

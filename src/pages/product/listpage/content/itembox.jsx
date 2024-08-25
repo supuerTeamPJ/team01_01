@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import itemimg from '../../../../image/img_product_view_16_2.jpg'
+import itemimg from '/image/img_product_view_16_2.jpg'
 
 
 const ItemBox = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FooterContainer, FootTop, FootBottom } from "../../../styled/layout";
-import FooterLogoImage from "../../../image/foot_logo.jpg";
+import FooterLogoImage from "/image/foot_logo.jpg";
 
 const Footer = () => {
 

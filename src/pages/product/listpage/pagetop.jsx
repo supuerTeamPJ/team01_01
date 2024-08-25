@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import backimg from  '../../../image/page_visual_01.jpg'
+import backimg from  '/image/page_visual_01.jpg'
 import Maintab from "./maintab";
 
 const PageTop = () => {
