@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import {
   HeaderContainer,
   HeadTop,
@@ -18,10 +19,17 @@ import {
 const Header = () => {
 
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();  // useNavigate 호출하여 navigate 함수 정의
 
   const handleMenuToggle = () => {
     setMenuOpen(prevState => !prevState);
   };
+
+  const handleNavigation = (e, path) => {
+    e.preventDefault();  // 기본 동작 방지
+    navigate(path);      // 해당 경로로 이동
+  };
+
 
   return (
     <HeaderContainer id="header">
@@ -78,7 +86,7 @@ const Header = () => {
         <Gnb>
           <Conwrap>
             <Logo>
-              <a href="https://www.monami.com/index.php;">
+              <a href="/" onClick={(e) => handleNavigation(e, '/')} target='_blank' rel="noreferrer noopener">
                 <img src="/image/logo.jpg" alt="로고" />
               </a>
             </Logo>
@@ -118,7 +126,7 @@ const Header = () => {
                   </ul>
                 </li>
                 <li>
-                  <a href="https://www.monami.com/index.php;">모나미제품</a>
+                <a href="/" onClick={(e) => handleNavigation(e, '/product')} target='_blank' rel="noreferrer noopener">모나미제품</a>
                   <ul className="depth2">
                     <li>
                       <a href="https://www.monami.com/index.php;">
@@ -185,7 +193,7 @@ const Header = () => {
                   </ul>
                 </li>
                 <li>
-                  <a href="https://www.monami.com/index.php;">고객지원</a>
+                  <a href="/" onClick={(e) => handleNavigation(e, '/Customer')} target='_blank' rel="noreferrer noopener">고객 지원</a>
                   <ul className="depth2">
                     <li>
                       <a href="https://www.monami.com/index.php;">
