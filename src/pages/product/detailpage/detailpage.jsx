@@ -1,12 +1,30 @@
 
-import React from "react"
+import React, { useContext, useEffect, useState } from "react"
 import styled from "styled-components";
 import PageTop from "../listpage/pagetop";
 import Container from "../../../components/container";
 import ImgDeatil from "./imgDetail";
 import InfoDetail from "./infoDetail";
+import { useNavigate, useParams } from "react-router-dom";
+import { ProductStore } from "../../../context/productcontext";
 
 const Detailpage = () =>{
+
+  const {id} = useParams();
+  const navigate3 = useNavigate();
+  const {product} = useContext(ProductStore);
+
+  const [productDetail , setProductDetail] = useState(null);
+
+  useEffect(() => {
+    const findProduct = product.find((item) => item.id === parseInt(id, 10) );
+    setProductDetail(findProduct);
+  },[id, product])
+
+  const handleMove = () => {
+    navigate3('/product');
+  }
+
   return(
     <>
       <Wrapper>
@@ -15,12 +33,12 @@ const Detailpage = () =>{
           <Container>
             <Title> product <span>info</span></Title>
             <Divflex>
-              <ImgDeatil/>
-              <InfoDetail/>
+              <ImgDeatil productDetail={productDetail}/>
+              <InfoDetail productDetail={productDetail}/>
             </Divflex>
           </Container>
           <ButtonWrapper>
-            <ListBtn>LIST</ListBtn>
+            <ListBtn onClick={() => handleMove()}>LIST</ListBtn>
           </ButtonWrapper>
       </Wrapper>
     </>

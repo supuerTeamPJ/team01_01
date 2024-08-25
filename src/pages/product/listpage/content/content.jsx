@@ -5,9 +5,7 @@ import Container from "../../../../components/container";
 import styled from "styled-components";
 import {  flexAlignCenter } from "../../../../styled/common";
 
-const Content = ({filterProduct, setfilterProduct, setCategory, selectSub,setSelctSub}) => {
-
-
+const Content = ({filterProduct, setfilterProduct, setCategory, }) => {
 
 
 

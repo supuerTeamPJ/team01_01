@@ -6,18 +6,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 
-const ImgDeatil = () =>{
+const ImgDeatil = ({productDetail}) =>{
+
+
+  const { imgURL, subimg = {} } = productDetail || {};
+  const subimgArray = Object.values(subimg);
+
   return(
     <>
       <div>
         <MainImg>
-          <img src='/image/img_best_tab01_07.jpg' alt="" />
+          <img src={imgURL} alt="이미지" />
         </MainImg>
         <SlideImg>
           <PreBtn> 
           <FontAwesomeIcon icon={faArrowLeft} />
           </PreBtn>
+          {subimgArray.length > 0 ? (
+          subimgArray.map((item, index) => (
+            <SubImg key={index}>
+              <img src={item} alt='' />
+            </SubImg>
+          ))
+        ) : (
           <SubImg></SubImg>
+        )}
           <NextBtn>
           <FontAwesomeIcon icon={faArrowRight} />
           </NextBtn>
@@ -39,6 +52,7 @@ const MainImg = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
   }
 `
 
@@ -53,8 +67,14 @@ const PreBtn = styled.button`
 `
 const SubImg = styled.div`
   border: 1px solid grey;  
-  width: 70px;
+  width: 69px;
   height: 105px;
+
+  img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 `
 const NextBtn = styled.button`
   width: 70px;

@@ -12,7 +12,7 @@ const ProductList = () =>{
 
      //필터링된데이터 담는 상태 
   const [filterProduct, setfilterProduct] = useState([]);
-  const [selectSub, setSelctSub ] = useState(true);
+  
 
     // 필터링할 카테고리명을 관리할 상태 
     const [category, setCategory] = useState('All');
