@@ -1,0 +1,434 @@
+.pagetabs {
+  position: relative;
+  max-width: 1400px;
+  width: 100%;
+  margin: -29px auto 85px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pagetabs ul {
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagetabs ul li {
+  float: left;
+  display: block;
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+  background: #fff;
+  border-right: 1px solid #ddd;
+}
+
+/* .pagetabs ul li a {
+  display: block;
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+  background: #fff;
+  border-right: 1px solid #ddd;
+} */
+
+.pagetabs ul li.is-active {
+  color: #fff;
+  background: #c40f39;
+}
+.pagetabs ul li:last-child {
+  border-right: 0;
+}
+
+.pagetabs ul.m4 li {
+  width: calc(100% / 2);
+}
+
+.title1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.title1:after {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 4px;
+  margin: 5px auto 95px;
+  background: #c40f39;
+}
+.title1 span {
+  color: #c40f39;
+}
+
+/* faq 자주하는질문 */
+.faq {
+  width: 1400px;
+  margin: 0 auto;
+}
+.faq_box {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 20px 50px 8px 43px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.faq_box.on {
+  border: 1px solid #ddd;
+  background: #f8f8f8;
+  padding: 20px 50px 8px 43px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.faq_box .qustion {
+  padding-left: 60px;
+  background: url(../../image/faq_q.png) no-repeat left top;
+}
+.faq_box .qustion a {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  color: #333;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+.faq_box.on .qustion a {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  color: #c40f39;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.faq_box .qustion a .arr {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #aaa;
+  border-right: 2px solid #aaa;
+  transform: rotateZ(130deg) skew(-9deg);
+  transition: all 0.3s;
+}
+.faq_box.on .qustion a .arr {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #aaa;
+  border-right: 2px solid #aaa;
+  transform: rotateZ(309deg) skew(-9deg);
+  transition: all 0.3s;
+}
+.faq_box .answer {
+  display: none;
+  padding: 15px 0 0 60px;
+  border-top: 1px solid #dedede;
+}
+.faq_box .answer p {
+  margin-bottom: 25px;
+  font-size: 14.5px;
+  color: #666;
+  line-height: 200%;
+}
+.faq_box .answer .dot {
+  display: block;
+  padding-left: 13px;
+  background: url(../../image/list_bg4.gif) no-repeat left 12px;
+}
+.faq_box .answer ul {
+  margin-bottom: 25px;
+}
+.faq_box .answer ul li {
+  font-size: 14px;
+  color: #666;
+  line-height: 200%;
+  padding-left: 14.5px;
+  background: url(../../image/list_bg4.gif) no-repeat left 12px;
+}
+.faq_box .answer .numtitle {
+  display: block;
+}
+.faq_box .answer .numtitle span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  padding: 0 2px;
+  text-align: center;
+  line-height: 19px;
+  font-family: "Montserrat";
+  font-size: 14.5px;
+  color: #fff;
+  background: #c40f39;
+  margin-right: 5px;
+}
+
+/* style.css */
+
+.inquiry-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* inquiry 문의하기 */
+.inquiry {
+}
+.inquiry .bgarea {
+}
+.inquiry .contactus {
+  width: 1400px;
+  height: 850px;
+  margin: 0 auto;
+  padding: 95px 100px 0;
+  background: url(../../image/inquiry_bg.jpg) no-repeat;
+}
+.inquiry .contactus h4 {
+  margin-bottom: 35px;
+  font-family: "Montserrat";
+  font-size: 36px;
+  color: #fff;
+}
+.inquiry .contactus .formarea {
+  overflow: hidden;
+}
+.inquiry .contactus .formarea .fl {
+  float: left;
+  width: 572px;
+}
+.inquiry .contactus .formarea .fl > div {
+  margin-bottom: 15px;
+}
+.inquiry .contactus .formarea .fl div#select_box {
+  position: relative;
+  width: 100%;
+  height: 58px;
+  background: rgba(255, 255, 255, 0.8) url(../../image/select_arrow.png) 95%
+    center no-repeat; /* 화살표 이미지 */
+  border: 1px solid #b7b6b5;
+}
+.inquiry .contactus .formarea .fl div#select_box label {
+  position: absolute;
+  font-size: 15px;
+  top: 17px;
+  left: 4%;
+  color: #777;
+}
+.inquiry .contactus .formarea .fl select {
+  width: 100%;
+  height: 58px;
+  min-height: 58px;
+  line-height: 58px;
+  padding: 0%;
+  opacity: 0;
+  filter: alpha(opacity=0); /* IE 8 */
+}
+.inquiry .contactus .formarea .fl input[type="text"] {
+  padding: 0 4%;
+  height: 58px;
+  line-height: 58px;
+  outline: 0;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #b7b6b5;
+  font-size: 15px;
+}
+.inquiry .contactus .formarea .fl textarea {
+  width: 100%;
+  padding: 20px 4%;
+  height: 76px;
+  outline: 0;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #b7b6b5;
+  font-size: 15px;
+  resize: none;
+}
+.filebox label {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 4%;
+  vertical-align: middle;
+  background: rgba(255, 255, 255, 0.8) url(../../image/file_upload.gif) 96%
+    center no-repeat;
+  cursor: pointer;
+  border: 1px solid #b7b6b5;
+  font-size: 15px;
+  color: #777;
+}
+.filebox input[type="file"] {
+  /* 파일 필드 숨기기 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.filebox .upload-name {
+  display: none;
+  padding: 20px 4%; /* label의 패딩값과 일치 */
+  font-size: inherit;
+  font-family: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #f5f5f5;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: 0.25em;
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.ie9_tit {
+  position: relative;
+}
+
+.ie9_tit input::placeholder {
+  position: absolute;
+  left: 4.1%;
+  top: 19px;
+  font-family: "Noto Sans KR", "돋움", dotum, sans-serif;
+  font-size: 15px;
+  color: #777;
+}
+
+.ie9_tit textarea::placeholder {
+  position: absolute;
+  left: 4.1%;
+  top: 19px;
+  font-family: "Noto Sans KR", "돋움", dotum, sans-serif;
+  font-size: 15px;
+  color: #777;
+}
+
+.ie9_tit label {
+  position: absolute;
+  left: 4.1%;
+  top: 19px;
+  font-size: 15px;
+  color: #777;
+}
+
+.ie9_tit label > span {
+  position: absolute;
+  top: -5px;
+  left: 70px;
+  width: 370px;
+  display: inline-block;
+  font-size: 12px;
+  cursor: none;
+}
+
+.inquiry .contactus .formarea .fr {
+  float: right;
+  width: 592px;
+}
+.inquiry .contactus .formarea .fr .textarea {
+  overflow-y: scroll;
+  width: 92%;
+  height: 500px;
+  padding: 20px 4%;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 180%;
+}
+.inquiry .contactus .formarea .fr .textarea .tit {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #000;
+}
+.inquiry .contactus .formarea .fr .textarea textarea {
+  width: 100%;
+  height: 2150px;
+  border: 0;
+  outline: 0;
+  background: 0;
+  resize: none;
+  word-break: keep-all;
+  overflow-y: hidden;
+}
+
+.inquiry .contactus .formarea .fr .chkarea {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+}
+.inquiry .contactus .formarea .fr .chkarea input {
+  width: 15px;
+  height: 15px;
+  background: none;
+}
+.btn_send {
+  margin: 50px 0 0;
+  text-align: center;
+}
+.btn_send a {
+  display: inline-block;
+  width: 380px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #c40f39;
+  transition: all 0.3s;
+}
+.btn_send a:hover {
+  background: #c40f39;
+  color: #fff;
+  transition: all 0.3s;
+}
