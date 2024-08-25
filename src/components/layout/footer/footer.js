@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FooterContainer, FootTop, FootBottom } from "../../../styled/layout";
-import FooterLogoImage from "/image/foot_logo.jpg";
 
 const Footer = () => {
 
@@ -16,7 +15,7 @@ const Footer = () => {
         <FootTop>
           <div className="foot_top">
             <h1>
-              <img src={FooterLogoImage} alt="푸터 모나미 로고" />
+              <img src="/image/foot_logo.jpg" alt="푸터 모나미 로고" />
             </h1>
             <ul className="fm">
               <li>

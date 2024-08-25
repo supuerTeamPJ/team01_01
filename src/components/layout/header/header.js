@@ -14,11 +14,6 @@ import {
   Search,
   AllMenu,
 } from "../../../styled/layout";
-import LogoImage from "/image/logo.jpg";
-import BtnFbImage from "/image/btn_header_sns_01.gif";
-import BtnIgImage from "/image/btn_header_sns_02.gif";
-import BtnYtbImage from "/image/btn_header_sns_03.png";
-import BtnSearchImage from "/image/btn_search.gif";
 
 const Header = () => {
 
@@ -48,17 +43,17 @@ const Header = () => {
                 <ul>
                   <li>
                     <a href="https://www.monami.com/index.php;">
-                      <img src={BtnFbImage} alt="모나미 페이스북 바로가기" />
+                      <img src="/image/btn_header_sns_01.gif" alt="모나미 페이스북 바로가기" />
                     </a>
                   </li>
                   <li>
                     <a href="https://www.monami.com/index.php;">
-                      <img src={BtnIgImage} alt="모나미 인스타그램 바로가기" />
+                      <img src="/image/btn_header_sns_02.gif" alt="모나미 인스타그램 바로가기" />
                     </a>
                   </li>
                   <li>
                     <a href="https://www.monami.com/index.php;">
-                      <img src={BtnYtbImage} alt="모나미 유튜브 바로가기" />
+                      <img src="/image/btn_header_sns_03.gif" alt="모나미 유튜브 바로가기" />
                     </a>
                   </li>
                 </ul>
@@ -84,7 +79,7 @@ const Header = () => {
           <Conwrap>
             <Logo>
               <a href="https://www.monami.com/index.php;">
-                <img src={LogoImage} alt="로고" />
+                <img src="/image/logo.jpg" alt="로고" />
               </a>
             </Logo>
             <Nav>
@@ -229,7 +224,7 @@ const Header = () => {
             <Search>
               <div className="nav_search">
                 <a href="https://www.monami.com/index.php;">
-                  <img src={BtnSearchImage} alt="검색" />
+                  <img src="/image/btn_search.gif" alt="검색" />
                 </a>
               </div>
               <div

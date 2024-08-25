@@ -1,11 +1,10 @@
 import React from 'react';
 import { MainVisual } from '../../styled/main';
-import VisualImage from '/image/main_visual.jpg'
 
 const VisualSection = () => {
   return (
     <MainVisual>
-      <img src={VisualImage} alt="메인 비주얼 이미지" />
+      <img src="/image/main_visual.jpg" alt="메인 비주얼 이미지" />
       <div className="textarea">
         <h3>
           어쩌면 삶은<br />
