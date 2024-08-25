@@ -3,20 +3,20 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { BestProduct } from "../../styled/main";
-import BestImage01 from '../../image/img_best_tab01_01.jpg'
-import BestImage02 from '../../image/img_best_tab01_02.jpg'
-import BestImage03 from '../../image/img_best_tab01_03.jpg'
-import BestImage04 from '../../image/img_best_tab01_04.jpg'
-import BestImage05 from '../../image/img_best_tab01_05.jpg'
-import BestImage06 from '../../image/img_best_tab01_06.jpg'
-import BestImage07 from '../../image/img_best_tab01_07.jpg'
-import BestImage08 from '../../image/img_best_tab01_08.jpg'
-import BestImage09 from '../../image/img_best_tab01_09.jpg'
-import BestImage10 from '../../image/img_best_tab01_10.jpg'
-import BestImage11 from '../../image/img_best_tab01_11.jpg'
-import DragArr1 from '../../image/p_arr1.gif'
-import DragArr2 from '../../image/p_arr2.gif'
-import DragImage from '../../image/p_cursor.gif'
+import BestImage01 from '/image/img_best_tab01_01.jpg'
+import BestImage02 from '/image/img_best_tab01_02.jpg'
+import BestImage03 from '/image/img_best_tab01_03.jpg'
+import BestImage04 from '/image/img_best_tab01_04.jpg'
+import BestImage05 from '/image/img_best_tab01_05.jpg'
+import BestImage06 from '/image/img_best_tab01_06.jpg'
+import BestImage07 from '/image/img_best_tab01_07.jpg'
+import BestImage08 from '/image/img_best_tab01_08.jpg'
+import BestImage09 from '/image/img_best_tab01_09.jpg'
+import BestImage10 from '/image/img_best_tab01_10.jpg'
+import BestImage11 from '/image/img_best_tab01_11.jpg'
+import DragArr1 from '/image/p_arr1.gif'
+import DragArr2 from '/image/p_arr2.gif'
+import DragImage from '/image/p_cursor.gif'
 
 
 const ProductListSection = () => {

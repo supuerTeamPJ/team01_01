@@ -1,6 +1,6 @@
 import React from 'react';
 import { MainVisual } from '../../styled/main';
-import VisualImage from '../../image/main_visual.jpg'
+import VisualImage from '/image/main_visual.jpg'
 
 const VisualSection = () => {
   return (
