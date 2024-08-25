@@ -49,7 +49,6 @@ export default Detailpage;
 
 
 const Wrapper = styled.div`
-  padding-top: 150px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -77,7 +76,7 @@ const Title = styled.h2`
   &::after {
     content: "";
     position: absolute;
-    top: 700px;
+    top: 520px;
     width: 40px;
     left: 50%;
     transform: translate(-50%, -50%);
