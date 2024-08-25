@@ -29,7 +29,7 @@ const FAQBox = styled.div`
   margin-bottom: 5px;
   cursor: pointer;
   position: relative;
-  transition: background 0.3s;
+  transition:  0.3s;
 
   .question {
     padding-left: 60px;
@@ -100,10 +100,9 @@ export default function FAQ() {
               <br />
               <br />
               <span className="dot">
-                <a href="">문의게시판</a>
+                <a href="http://mpms.monami.com/promotion/" >문의게시판</a>
               </span>
               <a href="http://www.monami.com/customer/inquiry.php?bluk=10">
-                http://www.monami.com/customer/inquiry.php?bluk=10
               </a>
             </p>
           </div>
@@ -124,10 +123,9 @@ export default function FAQ() {
               <br />
               <br />
               <span className="dot">
-                <a href="">문의게시판</a>
+                <a href="http://mpms.monami.com/promotion/">문의게시판</a>
               </span>
               <a href="http://www.monami.com/customer/inquiry.php?bluk=10">
-                http://www.monami.com/customer/inquiry.php?bluk=10
               </a>
             </p>
           </div>
@@ -148,10 +146,9 @@ export default function FAQ() {
               <br />
               <br />
               <span className="dot">
-                <a href="">모나미 기업 서비스 홈페이지</a>
+                <a href="http://mpms.monami.com/promotion/">모나미 기업 서비스 홈페이지</a>
               </span>
               <a href="http://mpms.monami.com/promotion/">
-                http://mpms.monami.com/promotion/
               </a>
             </p>
           </div>
@@ -211,14 +208,12 @@ export default function FAQ() {
               <br />
               <br />
               <span className="dot">153 NEO 만년필 사용법 모나미 유튜브</span>
-              <a href="https://youtu.be/74OtTN4tkSs" target="_blank">
-                https://youtu.be/74OtTN4tkSs
+              <a href="https://youtu.be/74OtTN4tkSs" target="_blank" rel="noopener noreferrer">
               </a>
               <br />
               <br />
               <span className="dot">잉크 유도 방법 모나미 유튜브</span>
-              <a href="https://youtu.be/4EPrMLAxq3M" target="_blank">
-                https://youtu.be/4EPrMLAxq3M
+              <a href="https://youtu.be/4EPrMLAxq3M" target="_blank" rel="noopener noreferrer">
               </a>
             </p>
           </div>
