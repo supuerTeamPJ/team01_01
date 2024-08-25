@@ -1,6 +1,5 @@
 
 import React from "react"
-import mainImg from '../../../image/img_best_tab01_07.jpg'
 import styled from "styled-components";
 import { flex } from "../../../styled/common";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -12,7 +11,7 @@ const ImgDeatil = () =>{
     <>
       <div>
         <MainImg>
-          <img src={mainImg} alt="" />
+          <img src='/image/img_best_tab01_07.jpg' alt="" />
         </MainImg>
         <SlideImg>
           <PreBtn> 

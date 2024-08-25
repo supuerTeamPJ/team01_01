@@ -3,28 +3,39 @@ import PageTop from "./listpage/pagetop"
 import Content from "./listpage/content/content"
 import Pagenation from "./listpage/pagenation"
 import styled from "styled-components"
-import { useContext, useEffect } from "react"
+import { useContext, useEffect, useState } from "react"
 import { ProductStore } from "../../context/productcontext"
 
 const ProductList = () =>{
     //저장소 불러오기 
     const {product} = useContext(ProductStore);
+
+     //필터링된데이터 담는 상태 
+  const [filterProduct, setfilterProduct] = useState([]);
+  const [selectSub, setSelctSub ] = useState(true);
+
+    // 필터링할 카테고리명을 관리할 상태 
+    const [category, setCategory] = useState('All');
+
     
     useEffect(() => {
-      console.log(product);
-    })
+      const filteredProducts = category === 'All'
+          ? product
+          : product.filter(item => 
+              item.category === category || 
+              item.subcategory === category
+          );
+
+      setfilterProduct(filteredProducts);
+  }, [category, product]);
 
 
-  // 상대를 두개 만들기 / 펜일때 와 펜슬일때를담아준다. 
-  // set상태를 페이지탑에게 넘겨준다. 
-  // 상태의 값이 펜일경우 펜의 데이터를 불러와 , 컨텐트로 전달하며, 
-  // 펜슬일경우 펜슬을 불러와 컨텐트로 전달한다. 
 
   return(
     <>
       <Wrapper>
-        <PageTop/>
-        <Content/>
+        <PageTop setCategory={setCategory}/>
+        <Content filterProduct = {filterProduct} setfilterProduct={setfilterProduct} setCategory={setCategory} />
         <Pagenation/>
       </Wrapper>
     </>
