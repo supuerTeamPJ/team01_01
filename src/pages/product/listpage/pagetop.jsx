@@ -6,7 +6,6 @@ const PageTop = ({setCategory}) => {
 
 
 
-  // 부모의 필터를 변경할수있는 셋상태를 받아 메인탭으로전달한다. 
   return (
     <>
         <Div>
