@@ -3,18 +3,13 @@ import Subtab from "./subtab";
 import ItemBox from "./itembox";
 import Container from "../../../../components/container";
 import styled from "styled-components";
+import {  flexAlignCenter } from "../../../../styled/common";
 
-const Content = () => {
-
-  // 전달받은 값을 아이템 박스에 전달한다. 
+const Content = ({filterProduct, setfilterProduct, setCategory, }) => {
 
 
-  // - 서브 필터 
-  // 상태 하나를 생성한다. 
-  // 상태를변경할수있는 셋을 서브 탭으로 보낸다. 
 
-  // 서브탭에서 변경된 상태값을 토대로 값을 선별한다. 
-  // 선별된 값을 아이템박스에 보낸다. 
+
   
   return (
     <>
@@ -22,8 +17,10 @@ const Content = () => {
         <Title>
           product <span>info</span>
         </Title>
-        <Subtab />
-        <ItemBox />
+        <Subtab filterProduct={filterProduct} setCategory={setCategory} />
+        <FlexBox>
+        {filterProduct.map((item) => <ItemBox item = {item} />)}
+        </FlexBox>
       </Container>
     </>
   );
@@ -52,3 +49,9 @@ const Title = styled.h2`
     display: block;
   }
 `;
+
+const FlexBox = styled.div`
+  flex-wrap: wrap;
+  gap: 10px;
+  ${flexAlignCenter}
+`
