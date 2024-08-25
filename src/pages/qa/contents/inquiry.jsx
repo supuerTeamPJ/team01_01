@@ -26,9 +26,7 @@ function Inquiry() {
     color: #c40f39;
   `;
 
-  const InquiryContainer = styled.div`
-    border: none;
-  `;
+
 
   return (
     <>
@@ -231,7 +229,7 @@ function Inquiry() {
               </div>
             </div>
             <div class="btn_send">
-              <a href="">SEND</a>
+              <a href="http://mpms.monami.com/promotion/">SEND</a>
             </div>
           </div>
         </form>
