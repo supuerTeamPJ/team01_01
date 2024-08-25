@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import backimg from  '/image/page_visual_01.jpg'
 import Maintab from "./maintab";
 
-const PageTop = () => {
+const PageTop = ({setCategory}) => {
 
-  // 부모의 필터를 변경할수있는 셋상태를 받아 메인탭으로전달한다. 
+
+
   return (
     <>
         <Div>
           <Title>모나미 제품</Title>
           <SubTitle>모나미는 당신의 행복한 기록과 함께합니다. </SubTitle>
-          <Maintab/>
+          <Maintab setCategory={setCategory}/>
         </Div>
     </>
   );
@@ -60,7 +60,7 @@ const Div = styled.div`
   height: 342px;
   background-position: center;
   background-size: cover;
-  background-image: url(${backimg});
+  background-image: url('/image/page_visual_01.jpg');
   text-align: center;
   position: relative;
 `;
