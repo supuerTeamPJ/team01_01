@@ -3,6 +3,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { BestProduct } from "../../styled/main";
+import arrow1 from '../../image/p_arr1.gif';
+import arrow2 from '../../image/p_arr2.gif';
+import cursor from '../../image/p_cursor.gif';
 
 
 const ProductListSection = () => {
@@ -139,10 +142,10 @@ const ProductListSection = () => {
       </div>
       <div class="p_info">
         <div class="wrap">
-          <span class="arr1"><img src="/image/p_arr1.gif" alt="드래그 화살표 1" /></span>
-          <span class="arr2"><img src="/image/p_arr2.gif" alt="드래그 화살표 2" /></span>
+          <span class="arr1"><img src={arrow1} alt="드래그 화살표 1" /></span>
+          <span class="arr2"><img src={arrow2} alt="드래그 화살표 2" /></span>
           <div class="ds">
-            <div><img src="/image/p_cursor.gif" alt="드래그 커서" /></div>
+            <div><img src={cursor} alt="드래그 커서" /></div>
             DRAG &amp; SCROLL
           </div>
         </div>
